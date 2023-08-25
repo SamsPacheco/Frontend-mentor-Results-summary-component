@@ -1,0 +1,16 @@
+@use 'colors';
+@mixin items($background, $colorTxt) {
+    display: flex ;
+    /* border: 1px dashed blue; */
+    align-items: center;
+    justify-content: space-between;
+    background: $background;
+    color: $colorTxt;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 18px 15px;
+    margin-bottom: 20px;
+    @media(min-width: 768px){
+        height: 45px;
+    }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <secction class="content">
+      <article class="result">
+        <h4 class="result__title">Your Result</h4>
+        <div class="result__score">
+          <p class="result__score-result">76 <span class="result__score-goal">of 100</span></p>
+        </div>
+        <div class="result__text">
+          <h3 class="result__text-title">Great</h3>
+          <p class="result__overview">You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+      </article> <!-- fin result -->
+
+      <article class="summary">
+        <h3 class="summary__title">Summary</h3>
+      <div class="summary__reaction">
+        <div class="summary__reaction-icon">
+          <img src="./assets/images/icon-reaction.svg" alt="icon-reaction">
+          <p>Reaction</p>
+        </div>
+        <p class="summary__reaction-number">80 <span class="summary__reaction-porcentage">/ 100</span></p>
+      </div>
+
+      <div class="summary__memory">
+        <div class="summary__memory-icon">
+          <img src="./assets/images/icon-memory.svg" alt="icon-memory">
+          <p>Memory</p>
+        </div>
+        <p class="summary__memory-number">92 <span class="summary__reaction-porcentage"> / 100</span></p>
+      </div>
+
+      <div class="summary__verbal">
+        <div class="summary__verbal-icon">
+          <img src="./assets/images/icon-verbal.svg" alt="icon-memory">
+          <p>Verbal</p>
+        </div>
+        <p class="summary__verbal-number">61 <span class="summary__verbal-porcentage">/ 100</span></p>
+      </div>
+
+      <div class="summary__visual">
+        <div class="summary__visual-icon">
+          <img src="./assets/images/icon-visual.svg" alt="icon-memory">
+          <p>Visual</p>
+        </div>
+        <p class="summary__verbal-number">72<span class="summary__verbal-porcentage"> / 100</span></p>
+      </div>
+      <button class="summary__btn">Continue</button>
+      </article>
+    </section>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <span>Samuel Pacheco</apan>.
+  </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+@use 'mixins';
+@use 'colors';
+.summary{
+    padding: 29px 30px;
+    /* border: 1px solid black; */
+    @media(min-width: 768px){
+        width: 50%;
+        padding: 0 30px;
+    }
+    &__title{
+        margin-bottom: 27px;
+    }
+    &__reaction{
+        @include mixins.items(colors.$reactionBG, colors.$reactionTX);
+        &-icon{
+            display: inherit;
+            gap: 15px;
+        }
+        &-number{
+            color: black;
+        }
+        &-porcentage{
+            color:  rgba(86, 84, 84, 0.6);;
+        }
+    }
+
+    &__memory{
+        @include mixins.items(colors.$memoryBG, colors.$memoryTX);
+        &-icon{
+            display: inherit;
+            gap: 15px;
+        }
+        &-number{
+            color: black;
+        }
+        &-porcentage{
+            color:  rgba(86, 84, 84, 0.6);;
+        }
+    }
+
+    &__verbal{
+        @include mixins.items(colors.$verbalBG, colors.$verbalTX);
+        &-icon{
+            display: inherit;
+            gap: 15px;
+        }
+        &-number{
+            color: black;
+        }
+        &-porcentage{
+            color:  rgba(86, 84, 84, 0.6);;
+        }
+    }
+
+    &__visual{
+        @include mixins.items(colors.$visualBG, colors.$visualTX);
+        &-icon{
+            display: inherit;
+            gap: 15px;
+        }
+        &-number{
+            color: black;
+        }
+        &-porcentage{
+            color:  rgba(86, 84, 84, 0.6);;
+        }
+    }
+
+    &__btn{
+        margin-top: 10px;
+        height: 60px;
+        background: hsla(235, 43%, 24%, 0.936);
+        color: white;
+        font-weight: 700;
+        border: none;
+        width: 100%;
+        border-radius: 25px;
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &:hover{
+            cursor: pointer;
+            background: colors.$your_resultBG;
+        }
+        @media(min-width: 768px){
+            height: 50px;
+        }
+    }
+
+}

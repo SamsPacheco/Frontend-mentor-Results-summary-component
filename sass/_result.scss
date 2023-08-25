@@ -1,0 +1,65 @@
+@use 'colors'; 
+.result{
+    @media(min-width: 768px){
+        border-radius: 20px;
+        height: 100%;
+        width: 305px;
+        &__text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__overview{
+            width: 205px;
+        }
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: colors.$your_resultBG;
+    border-radius: 0 0 30px 30px;
+    height: 340px;
+    &__title{
+        text-align: center;
+        color: rgba(255, 255, 255, 0.600);
+    }
+    &__score{
+        width: 140px;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: colors.$cirlceBG;
+        margin-bottom: 20px;
+        &-result{
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+            display: inherit;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        &-goal{
+            color: rgba(255, 255, 255, 0.600);
+            font-size: 15px;
+        }
+    }
+    &__text{
+        margin-bottom: 20px;
+        text-align: center;
+        width: 260px;
+        &-title{
+            color: white;
+            margin-bottom: 10px;
+            font-size: 25px;
+        }
+    }
+    &__overview{
+        color: rgba(255, 255, 255, 0.600);
+        font-size: 15px;
+    }
+}

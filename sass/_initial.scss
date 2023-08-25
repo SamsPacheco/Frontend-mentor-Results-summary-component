@@ -1,0 +1,32 @@
+// estilos del contenedor general, importacion de colores y estilos de fuente 
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400&family=Kumbh+Sans:wght@400;700&family=PT+Sans&family=Poppins:wght@100&display=swap');
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.content{
+    @media(min-width: 768px){
+        margin: 0 auto;
+        margin-top: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 625px;
+        height: 460px;
+        justify-content: space-between;
+        border-radius: 20px;
+        box-shadow: rgba(57, 57, 193, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+}
+
+.attribution{
+    margin-top: 30px;
+    opacity: 0.5;
+    font-style: italic;
+}
+
